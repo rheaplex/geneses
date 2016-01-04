@@ -1,0 +1,86 @@
+# Licensing
+
+The code is GPLv3, the data is CC0, and the PDF is CC-BY-SA 4.0 .
+
+# Market Cap Data Source
+
+http://coinmarketcap.com/currencies/views/all/
+
+Order of market cap is as of 2nd Jan 2016.
+
+See development/index.html
+
+# Notes On Values
+
+Hashes were fetched from block explorers or from github projects.
+
+Hashes are preferred to block IDs and burn or issuing addresses.
+
+For burns, the first block containing a burn transaction is used.
+
+For issuances, the underlying protocol block containing the first issuance is
+used.
+
+Some block explorers start indexing at zero, some at one.
+
+Where block zero has a date of EPOCH and zero for all fields, we use block one.
+
+## Bilshares
+
+NXT-style block id for genesis block, we zero-pad the hex encoded equivalent:
+
+1144880232558980432
+
+## BitCrystals
+
+The Bitcoin transaction:
+
+0000000000000000035e4faa9a392cb437248733c803274dd3e1753719c4c255
+
+contains the first issuance of BitCrystals via Counterparty.
+
+## Blockshares
+
+Block id for block 1 from https://github.com/bitshares/bitshares-0.x/blob/master/libraries/blockchain/include/bts/blockchain/checkpoints.hpp
+
+## Counterparty
+
+We use the first Bitcoin block (278319) containing a Counterparty burn, as per https://blockscan.com/tx?block=278319 :
+
+0000000000000000818895F3DC2C178629D3D2D8FA3EC4A3F8179821239FEC4D
+
+## Gulden
+
+Gulden block zero has a date in 2001:
+
+6c5d71a461b5bff6742bb62e5be53978b8dec5103ce52d1aaab8c6a251582f92
+
+Block one is in 2014:
+
+756e5147f48e143f7468b881571ac947f39950819c82d8d17ee7ceaa8e3a6628
+
+We use block zero as it is not EPOCH.
+
+## Mastercoin
+
+We use the first Bitcoin block (249560) containing a transaction to the exodus address, as per https://blockchain.info/address/1EXoDusjGwvnjZUyKkxZ4UHEf77z6A5S4P?offset=39500&filter=0 which is :
+
+0000000000000056d99aba76175c2adacbfcd7179289e90308b88b143dd6592c
+
+## Nxt
+
+Nxt has no block hash, we use the block id. Its decimal value is:
+
+2680262203532249785
+
+## Ripple
+
+Due to Ripple's history being lost, we use block 32569, the earliest available header hash, instead:
+
+60A01EBF11537D8394EA1235253293508BDA7131D5F8710EFE9413AA129653A2
+
+## Steller
+
+Hash (not id) for first ledger: https://horizon.stellar.org/ledgers/1
+
+39c2a3cd4141b2853e70d84601faa44744660334b48f3228e0309342e3f4eb48

@@ -1,7 +1,4 @@
-\documentclass{book}
-
-\usepackage{geometry}
-\geometry{a6paper}
+\documentclass[a5paper, twoside]{book}
 
 \usepackage[utf8]{inputenc}
 \usepackage{libertine}
@@ -24,16 +21,30 @@
 
 \begin{document}
 
+\newpage
+% Blank page
+\vspace*{\fill}
+\thispagestyle{empty}
+
+\newpage
+% Blank page
+\vspace*{\fill}
+\thispagestyle{empty}
+
 \title{Geneses}
 \author{Rhea Myers}
 \date{}
 \maketitle
+
+\setcounter{page}{4}
 
 \newpage
 \vspace*{\fill}
 \centerline{\href{https://rhea.art/}{rhea.art}}
 \medskip
 \centerline{\href{https://gitlab.com/rheaplex/geneses/}{gitlab.com/rheaplex/geneses}}
+\medskip
+\centerline{ISBN 978-1-329-80835-5}
 \medskip
 \centerline{Copyright \copyright 2016}
 \begin{center}
@@ -42,6 +53,7 @@
 \end{center}
 \label{fig:cc}
 \centering{``Geneses'' by Rhea Myers is licensed under a\\\href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Attribution-ShareAlike 4.0 International License.}}
+\thispagestyle{empty}
 
 \newpage
 \vspace*{\fill}
@@ -53,19 +65,22 @@ With thanks to Seryna.
 \newpage
 % Blank page
 \vspace*{\fill}
+\thispagestyle{empty}
 
 \newpage
 \vspace*{\fill}
 \begin{flushleft}
-A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencies with\\the highest market capitalization\\on January the Second, 2016\\encoded as \href{https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki}{BIP039} mnemonics.
+A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencies with\\the highest market capitalization\\on January the Second, 2016\\encoded as \href{https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki}{BIP-0039} mnemonics.
 \end{flushleft}
 \vspace*{\fill}
 
 \newpage
 % Blank page
 \vspace*{\fill}
+\thispagestyle{empty}
 
 \newpage
+
 \begin{verse}
 \poemtitle{Geneses}
 \flagverse{1.} abandon abandon abandon ability output crowd ice area thumb clown sibling charge youth range ribbon stairs plug argue provide toddler gaze edit meadow update
@@ -140,7 +155,7 @@ A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencie
 
 \flagverse{36.} abandon abandon vessel forget foam eyebrow chase pattern flip genre clay indicate faith solve icon dog used mercy kid moral state frost friend walnut
 
-\flagverse{27.} abandon abandon burden chaos cycle empty alert hole behind ostrich mansion attract idea tide explain boring easy mouse produce myth business usual north equip
+\flagverse{37.} abandon abandon burden chaos cycle empty alert hole behind ostrich mansion attract idea tide explain boring easy mouse produce myth business usual north equip
 
 \flagverse{38.} abandon able kit gown pottery purse misery hello dog yellow secret renew vocal danger assist punch stuff brother lucky corn flee smart capital clever
 
@@ -269,6 +284,8 @@ A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencie
 \flagverse{100.} abandon abandon abandon seven flight voyage abstract just verb virus fire room select laptop nominee ribbon install panel phone medal artist token afford scorpion
 
 \end{verse}
+
+\newpage
 \poemtitle{Coins by Market Cap as of 2016-01-02}
 \begin{center}
 \begin{tabular}{ r | l }
@@ -291,16 +308,16 @@ A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencie
     17 & EmerCoin \\
     18 & RubyCoin \\
     19 & BlackCoin \\
-\end{tabular}
-\end{center}
-\newpage
-\begin{center}
-\begin{tabular}{ r | l }
     20 & Clams \\
     21 & YbCoin \\
     22 & MonaCoin \\
     23 & Startcoin \\
     24 & NEM \\
+\end{tabular}
+\end{center}
+\newpage
+\begin{center}
+\begin{tabular}{ r | l }
     25 & Counterparty \\
     26 & Global Currency Reserve \\
     27 & BitcoinDark \\
@@ -313,14 +330,9 @@ A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencie
     34 & NeuCoin \\
     35 & PrimeCoin \\
     36 & NuBits \\
-    27 & AmberCoin \\
+    37 & AmberCoin \\
     38 & VeriCoin \\
     39 & PayCoin \\
-\end{tabular}
-\end{center}
-\newpage
-\begin{center}
-\begin{tabular}{ r | l }
     40 & DigiByte \\
     41 & ShadowCash \\
     42 & IOCoin \\
@@ -331,6 +343,11 @@ A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencie
     47 & NautilusCoin \\
     48 & WorldCoin \\
     49 & DNotes \\
+\end{tabular}
+\end{center}
+\newpage
+\begin{center}
+\begin{tabular}{ r | l }
     50 & Megacoin \\
     51 & Vanillacoin \\
     52 & SolarCoin \\
@@ -341,11 +358,6 @@ A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencie
     57 & ReddCoin \\
     58 & Diamond \\
     59 & Vertcoin \\
-\end{tabular}
-\end{center}
-\newpage
-\begin{center}
-\begin{tabular}{ r | l }
     60 & FuelCoin \\
     61 & Gulden \\
     62 & Feathercoin \\
@@ -361,16 +373,16 @@ A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencie
     72 & FlyCoin \\
     73 & BilShares \\
     74 & Anoncoin \\
-    75 & Digitalcoin \\
-    76 & Auroracoin \\
-    77 & Zetacoin \\
-    78 & Crypto Bullion \\
-    79 & CureCoin \\
 \end{tabular}
 \end{center}
 \newpage
 \begin{center}
 \begin{tabular}{ r | l }
+    75 & Digitalcoin \\
+    76 & Auroracoin \\
+    77 & Zetacoin \\
+    78 & Crypto Bullion \\
+    79 & CureCoin \\
     80 & UnionCoin \\
     81 & CloakCoin \\
     82 & MaxCoin \\

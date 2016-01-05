@@ -2,6 +2,9 @@
 
 The code is GPLv3, the data is CC0, and the PDF is CC-BY-SA 4.0 .
 
+Please note that the ISBN included in the TeX source should be removed if you
+modify and/or distribute the results.
+
 # Market Cap Data Source
 
 http://coinmarketcap.com/currencies/views/all/

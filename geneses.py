@@ -19,7 +19,7 @@ import csv, mnemonic
 
 from binascii import unhexlify
 
-TOC_STRIDE = 20
+TOC_STRIDE = 25
 TOTAL_COINS = 100
 
 m = mnemonic.Mnemonic('english')
@@ -56,10 +56,7 @@ poem += "\\end{verse}\n"
 # Print everything out
 ################################################################################
 
-print r'''\documentclass{book}
-
-\usepackage{geometry}
-\geometry{a6paper}
+print r'''\documentclass[a5paper, twoside]{book}
 
 \usepackage[utf8]{inputenc}
 \usepackage{libertine}
@@ -82,16 +79,30 @@ print r'''\documentclass{book}
 
 \begin{document}
 
+\newpage
+% Blank page
+\vspace*{\fill}
+\thispagestyle{empty}
+
+\newpage
+% Blank page
+\vspace*{\fill}
+\thispagestyle{empty}
+
 \title{Geneses}
 \author{Rhea Myers}
 \date{}
 \maketitle
+
+\setcounter{page}{4}
 
 \newpage
 \vspace*{\fill}
 \centerline{\href{https://rhea.art/}{rhea.art}}
 \medskip
 \centerline{\href{https://gitlab.com/rheaplex/geneses/}{gitlab.com/rheaplex/geneses}}
+\medskip
+\centerline{ISBN 978-1-329-80835-5}
 \medskip
 \centerline{Copyright \copyright 2016}
 \begin{center}
@@ -100,6 +111,7 @@ print r'''\documentclass{book}
 \end{center}
 \label{fig:cc}
 \centering{``Geneses'' by Rhea Myers is licensed under a\\\href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Attribution-ShareAlike 4.0 International License.}}
+\thispagestyle{empty}
 
 \newpage
 \vspace*{\fill}
@@ -111,20 +123,23 @@ With thanks to Seryna.
 \newpage
 % Blank page
 \vspace*{\fill}
+\thispagestyle{empty}
 
 \newpage
 \vspace*{\fill}
 \begin{flushleft}
-A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencies with\\the highest market capitalization\\on January the Second, 2016\\encoded as \href{https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki}{BIP039} mnemonics.
+A poem consisting of\\the genesis block hashes from\\the hundred cryptocurrencies with\\the highest market capitalization\\on January the Second, 2016\\encoded as \href{https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki}{BIP-0039} mnemonics.
 \end{flushleft}
 \vspace*{\fill}
 
 \newpage
 % Blank page
 \vspace*{\fill}
+\thispagestyle{empty}
 
 \newpage
-''' + poem + toc + r'''
+
+''' + poem + "\n\\newpage\n" + toc + r'''
 
 \setlength{\vindent}{\savevindent}
 
